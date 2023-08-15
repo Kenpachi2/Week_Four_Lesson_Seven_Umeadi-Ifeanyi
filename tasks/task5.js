@@ -21,7 +21,7 @@ const mountains = [
   const table = document.createElement('table');
   table.innerHTML = '<tr><th>Name</th><th>Height</th><th>Place</th><tr>'
 
-  for(formations of mountains) {
+  for( const formations of mountains) {
     const row2 = document.createElement('tr');
     const cellOne = document.createElement('td');
     const cellTwo = document.createElement('td');
@@ -29,7 +29,7 @@ const mountains = [
     
     cellOne.innerText = formations.name;
     cellTwo.innerText = formations.height;
-    cellThree.innerHTML = formations.place;
+    cellThree.innerHTML = formations['place'];
     
     row2.appendChild(cellOne)
     row2.appendChild(cellTwo)
